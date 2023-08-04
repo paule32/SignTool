@@ -1,0 +1,14 @@
+
+*.dcu
+*.~dfm
+*.~pas
+images/apache_128.bmp.z
+MainForm.ddp
+pack/borlndmm.dll
+*.dll
+pack/SignTool.chm
+*.exe
+*.zip
+resources.RES
+*.~ddp
+SignTool.~dpr
