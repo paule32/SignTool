@@ -13,7 +13,6 @@ object Form1: TForm1
   Menu = JvMainMenu1
   OldCreateOrder = False
   OnClose = FormClose
-  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 115
   TextHeight = 16
@@ -55,11 +54,9 @@ object Form1: TForm1
       Caption = 'File'
       object DefaultSettings1: TMenuItem
         Caption = 'Default  Settings'
-        OnClick = DefaultSettings1Click
       end
       object ClearFields1: TMenuItem
         Caption = 'Clear Fields'
-        OnClick = ClearFields1Click
       end
       object N2: TMenuItem
         Caption = '-'

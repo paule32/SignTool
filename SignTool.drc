@@ -8,411 +8,412 @@
   resources were bound to the produced executable.
 */
 
-#define LMDRTLXConst_SLMDPNGCannotAssignChunkText 64976
-#define LMDRTLXConst_SLMDPNGUnexpectedEndText 64977
-#define LMDRTLXConst_SLMDPNGNoImageDataText 64978
-#define LMDRTLXConst_SLMDPNGOutMemoryText 64979
-#define LMDRTLXConst_SLMDPNGHeaderNotPresentText 64980
-#define LMDRTLConst_SLMDXmlError24 64992
-#define LMDRTLConst_SLMDXmlError25 64993
-#define LMDRTLConst_SLMDXmlError26 64994
-#define LMDRTLConst_SLMDFCreateError 64995
-#define LMDRTLConst_SLMDFOpenError 64996
-#define LMDRTLXConst_SLMDPNGInvalidNewSize 64997
-#define LMDRTLXConst_SLMDPNGInvalidIHDRText 64998
-#define LMDRTLXConst_SLMDPNGMissingMultipleIDATText 64999
-#define LMDRTLXConst_SLMDPNGZLIBErrorText 65000
-#define LMDRTLXConst_SLMDPNGInvalidPaletteText 65001
-#define LMDRTLXConst_SLMDPNGInvalidFileHeaderText 65002
-#define LMDRTLXConst_SLMDPNGIHDRNotFirstText 65003
-#define LMDRTLXConst_SLMDPNGSizeExceedsText 65004
-#define LMDRTLXConst_SLMDPNGUnknownPalEntryText 65005
-#define LMDRTLXConst_SLMDPNGUnknownCompressionText 65006
-#define LMDRTLXConst_SLMDPNGUnknownInterlaceText 65007
-#define LMDRTLConst_SLMDXmlError8 65008
-#define LMDRTLConst_SLMDXmlError9 65009
-#define LMDRTLConst_SLMDXmlError10 65010
-#define LMDRTLConst_SLMDXmlError11 65011
-#define LMDRTLConst_SLMDXmlError12 65012
-#define LMDRTLConst_SLMDXmlError13 65013
-#define LMDRTLConst_SLMDXmlError14 65014
-#define LMDRTLConst_SLMDXmlError15 65015
-#define LMDRTLConst_SLMDXmlError16 65016
-#define LMDRTLConst_SLMDXmlError17 65017
-#define LMDRTLConst_SLMDXmlError18 65018
-#define LMDRTLConst_SLMDXmlError19 65019
-#define LMDRTLConst_SLMDXmlError20 65020
-#define LMDRTLConst_SLMDXmlError21 65021
-#define LMDRTLConst_SLMDXmlError22 65022
-#define LMDRTLConst_SLMDXmlError23 65023
-#define JvResources_RsEInvalidWizardPage 65024
-#define JvResources_RsETilingError 65025
-#define JvResources_RsActiveStepFormat 65026
-#define JvResources_RsBackTo 65027
-#define JvResources_RsNextStep 65028
-#define JvResources_RsDestroyingArrangeSettingsNotAllowed 65029
-#define JConsts_sChangeJPGSize 65030
-#define JConsts_sJPEGError 65031
-#define JConsts_sJPEGImageFile 65032
-#define LMDRTLConst_SLMDXmlError1 65033
-#define LMDRTLConst_SLMDXmlError2 65034
-#define LMDRTLConst_SLMDXmlError3 65035
-#define LMDRTLConst_SLMDXmlError4 65036
-#define LMDRTLConst_SLMDXmlError5 65037
-#define LMDRTLConst_SLMDXmlError6 65038
-#define LMDRTLConst_SLMDXmlError7 65039
-#define JvResources_RsClBtnHighlight 65040
-#define JvResources_RsCl3DDkShadow 65041
-#define JvResources_RsCl3DLight 65042
-#define JvResources_RsClInfoText 65043
-#define JvResources_RsClInfoBk 65044
-#define JvResources_RsGradientActiveCaption 65045
-#define JvResources_RsGradientInactiveCaption 65046
-#define JvResources_RsHotLight 65047
-#define JvResources_RsMenuBar 65048
-#define JvResources_RsMenuHighlight 65049
-#define JvResources_RsFirstButtonCaption 65050
-#define JvResources_RsLastButtonCaption 65051
-#define JvResources_RsFinishButtonCaption 65052
-#define JvResources_RsTitle 65053
-#define JvResources_RsSubtitle 65054
-#define JvResources_RsEInvalidParentControl 65055
-#define JvResources_RsClMenu 65056
-#define JvResources_RsClWindow 65057
-#define JvResources_RsClWindowFrame 65058
-#define JvResources_RsClMenuText 65059
-#define JvResources_RsClWindowText 65060
-#define JvResources_RsClCaptionText 65061
-#define JvResources_RsClActiveBorder 65062
-#define JvResources_RsClInactiveBorder 65063
-#define JvResources_RsClAppWorkSpace 65064
-#define JvResources_RsClHighlight 65065
-#define JvResources_RsClHighlightText 65066
-#define JvResources_RsClBtnFace 65067
-#define JvResources_RsClBtnShadow 65068
-#define JvResources_RsClGrayText 65069
-#define JvResources_RsClBtnText 65070
-#define JvResources_RsClInactiveCaptionText 65071
-#define JvResources_RsClGold 65072
-#define JvResources_RsClBrightGreen 65073
-#define JvResources_RsClTurquoise 65074
-#define JvResources_RsClPlum 65075
-#define JvResources_RsClGray25 65076
-#define JvResources_RsClRose 65077
-#define JvResources_RsClTan 65078
-#define JvResources_RsClLightYellow 65079
-#define JvResources_RsClLightGreen 65080
-#define JvResources_RsClLightTurquoise 65081
-#define JvResources_RsClPaleBlue 65082
-#define JvResources_RsClLavender 65083
-#define JvResources_RsClScrollBar 65084
-#define JvResources_RsClBackground 65085
-#define JvResources_RsClActiveCaption 65086
-#define JvResources_RsClInactiveCaption 65087
-#define JvResources_RsClDarkGreen 65088
-#define JvResources_RsClDarkTeal 65089
-#define JvResources_RsClDarkBlue 65090
-#define JvResources_RsClIndigo 65091
-#define JvResources_RsClGray80 65092
-#define JvResources_RsClDarkRed 65093
-#define JvResources_RsClOrange 65094
-#define JvResources_RsClDarkYellow 65095
-#define JvResources_RsClBlueGray 65096
-#define JvResources_RsClGray50 65097
-#define JvResources_RsClLightOrange 65098
-#define JvResources_RsClSeaGreen 65099
-#define JvResources_RsClLightBlue 65100
-#define JvResources_RsClViolet 65101
-#define JvResources_RsClGray40 65102
-#define JvResources_RsClPink 65103
-#define JvResources_RsClTeal 65104
-#define JvResources_RsClGray 65105
-#define JvResources_RsClSilver 65106
-#define JvResources_RsClRed 65107
-#define JvResources_RsClLime 65108
-#define JvResources_RsClYellow 65109
-#define JvResources_RsClBlue 65110
-#define JvResources_RsClFuchsia 65111
-#define JvResources_RsClAqua 65112
-#define JvResources_RsClWhite 65113
-#define JvResources_RsClMoneyGreen 65114
-#define JvResources_RsClSkyBlue 65115
-#define JvResources_RsClCream 65116
-#define JvResources_RsClMedGray 65117
-#define JvResources_RsClBrown 65118
-#define JvResources_RsClOliveGreen 65119
-#define JclResources_RsOSVersionWinServer2012R2 65120
-#define ComConst_SOleError 65121
-#define ComConst_SNoMethod 65122
-#define ComConst_SVarNotObject 65123
-#define ComConst_STooManyParams 65124
-#define JvResources_RsBackButtonCaption 65125
-#define JvResources_RsNextButtonCaption 65126
-#define JvResources_RsEOwnerMustBeTCustomForm 65127
-#define JvResources_RsEProcessIsRunning 65128
-#define JvResources_RsEInvalidControlSelection 65129
-#define JvResources_RsClBlack 65130
-#define JvResources_RsClMaroon 65131
-#define JvResources_RsClGreen 65132
-#define JvResources_RsClOlive 65133
-#define JvResources_RsClNavy 65134
-#define JvResources_RsClPurple 65135
-#define JclResources_RsIntelCacheDescrDC 65136
-#define JclResources_RsIntelCacheDescrDD 65137
-#define JclResources_RsIntelCacheDescrDE 65138
-#define JclResources_RsIntelCacheDescrE2 65139
-#define JclResources_RsIntelCacheDescrE3 65140
-#define JclResources_RsIntelCacheDescrE4 65141
-#define JclResources_RsIntelCacheDescrEA 65142
-#define JclResources_RsIntelCacheDescrEB 65143
-#define JclResources_RsIntelCacheDescrEC 65144
-#define JclResources_RsIntelCacheDescrF0 65145
-#define JclResources_RsIntelCacheDescrF1 65146
-#define JclResources_RsIntelCacheDescrFF 65147
-#define JclResources_RsUnknownAMDModel 65148
-#define JclResources_RsOSVersionWin8 65149
-#define JclResources_RsOSVersionWinServer2012 65150
-#define JclResources_RsOSVersionWin81 65151
-#define JclResources_RsIntelCacheDescr86 65152
-#define JclResources_RsIntelCacheDescr87 65153
-#define JclResources_RsIntelCacheDescrB0 65154
-#define JclResources_RsIntelCacheDescrB1 65155
-#define JclResources_RsIntelCacheDescrB2 65156
-#define JclResources_RsIntelCacheDescrB3 65157
-#define JclResources_RsIntelCacheDescrB4 65158
-#define JclResources_RsIntelCacheDescrBA 65159
-#define JclResources_RsIntelCacheDescrC0 65160
-#define JclResources_RsIntelCacheDescrCA 65161
-#define JclResources_RsIntelCacheDescrD0 65162
-#define JclResources_RsIntelCacheDescrD1 65163
-#define JclResources_RsIntelCacheDescrD2 65164
-#define JclResources_RsIntelCacheDescrD6 65165
-#define JclResources_RsIntelCacheDescrD7 65166
-#define JclResources_RsIntelCacheDescrD8 65167
-#define JclResources_RsIntelCacheDescr71 65168
-#define JclResources_RsIntelCacheDescr72 65169
-#define JclResources_RsIntelCacheDescr73 65170
-#define JclResources_RsIntelCacheDescr76 65171
-#define JclResources_RsIntelCacheDescr78 65172
-#define JclResources_RsIntelCacheDescr79 65173
-#define JclResources_RsIntelCacheDescr7A 65174
-#define JclResources_RsIntelCacheDescr7B 65175
-#define JclResources_RsIntelCacheDescr7C 65176
-#define JclResources_RsIntelCacheDescr7D 65177
-#define JclResources_RsIntelCacheDescr7F 65178
-#define JclResources_RsIntelCacheDescr80 65179
-#define JclResources_RsIntelCacheDescr82 65180
-#define JclResources_RsIntelCacheDescr83 65181
-#define JclResources_RsIntelCacheDescr84 65182
-#define JclResources_RsIntelCacheDescr85 65183
-#define JclResources_RsIntelCacheDescr50 65184
-#define JclResources_RsIntelCacheDescr51 65185
-#define JclResources_RsIntelCacheDescr52 65186
-#define JclResources_RsIntelCacheDescr55 65187
-#define JclResources_RsIntelCacheDescr56 65188
-#define JclResources_RsIntelCacheDescr57 65189
-#define JclResources_RsIntelCacheDescr59 65190
-#define JclResources_RsIntelCacheDescr5A 65191
-#define JclResources_RsIntelCacheDescr5B 65192
-#define JclResources_RsIntelCacheDescr5C 65193
-#define JclResources_RsIntelCacheDescr5D 65194
-#define JclResources_RsIntelCacheDescr60 65195
-#define JclResources_RsIntelCacheDescr66 65196
-#define JclResources_RsIntelCacheDescr67 65197
-#define JclResources_RsIntelCacheDescr68 65198
-#define JclResources_RsIntelCacheDescr70 65199
-#define JclResources_RsIntelCacheDescr40 65200
-#define JclResources_RsIntelCacheDescr41 65201
-#define JclResources_RsIntelCacheDescr42 65202
-#define JclResources_RsIntelCacheDescr43 65203
-#define JclResources_RsIntelCacheDescr44 65204
-#define JclResources_RsIntelCacheDescr45 65205
-#define JclResources_RsIntelCacheDescr46 65206
-#define JclResources_RsIntelCacheDescr47 65207
-#define JclResources_RsIntelCacheDescr48 65208
-#define JclResources_RsIntelCacheDescr49 65209
-#define JclResources_RsIntelCacheDescr4A 65210
-#define JclResources_RsIntelCacheDescr4B 65211
-#define JclResources_RsIntelCacheDescr4C 65212
-#define JclResources_RsIntelCacheDescr4D 65213
-#define JclResources_RsIntelCacheDescr4E 65214
-#define JclResources_RsIntelCacheDescr4F 65215
-#define JclResources_RsIntelCacheDescr0C 65216
-#define JclResources_RsIntelCacheDescr0D 65217
-#define JclResources_RsIntelCacheDescr0E 65218
-#define JclResources_RsIntelCacheDescr21 65219
-#define JclResources_RsIntelCacheDescr22 65220
-#define JclResources_RsIntelCacheDescr23 65221
-#define JclResources_RsIntelCacheDescr25 65222
-#define JclResources_RsIntelCacheDescr29 65223
-#define JclResources_RsIntelCacheDescr2C 65224
-#define JclResources_RsIntelCacheDescr30 65225
-#define JclResources_RsIntelCacheDescr39 65226
-#define JclResources_RsIntelCacheDescr3A 65227
-#define JclResources_RsIntelCacheDescr3B 65228
-#define JclResources_RsIntelCacheDescr3C 65229
-#define JclResources_RsIntelCacheDescr3D 65230
-#define JclResources_RsIntelCacheDescr3E 65231
-#define JclResources_RsUnableToOpenKeyRead 65232
-#define JclResources_RsUnableToAccessValue 65233
-#define JclResources_RsWrongDataType 65234
-#define JclResources_RsInconsistentPath 65235
-#define JclResources_RsInvalidEmptyStringItem 65236
-#define JclResources_RsIntelCacheDescr00 65237
-#define JclResources_RsIntelCacheDescr01 65238
-#define JclResources_RsIntelCacheDescr02 65239
-#define JclResources_RsIntelCacheDescr03 65240
-#define JclResources_RsIntelCacheDescr04 65241
-#define JclResources_RsIntelCacheDescr05 65242
-#define JclResources_RsIntelCacheDescr06 65243
-#define JclResources_RsIntelCacheDescr08 65244
-#define JclResources_RsIntelCacheDescr09 65245
-#define JclResources_RsIntelCacheDescr0A 65246
-#define JclResources_RsIntelCacheDescr0B 65247
-#define ExtCtrls_clName3DLight 65248
-#define ExtCtrls_clNameWindow 65249
-#define ExtCtrls_clNameWindowFrame 65250
-#define ExtCtrls_clNameWindowText 65251
-#define ComStrs_sTabFailClear 65252
-#define ComStrs_sTabFailDelete 65253
-#define ComStrs_sTabFailRetrieve 65254
-#define ComStrs_sTabFailGetObject 65255
-#define ComStrs_sTabFailSet 65256
-#define ComStrs_sTabFailSetObject 65257
-#define ComStrs_sTabMustBeMultiLine 65258
-#define ComStrs_sInvalidIndex 65259
-#define ComStrs_sInsertError 65260
-#define ComStrs_sPageIndexError 65261
-#define WinHelpViewer_hNoKeyword 65262
-#define JclResources_RsEReplacementChar 65263
-#define ExtCtrls_clNameBtnText 65264
-#define ExtCtrls_clNameCaptionText 65265
-#define ExtCtrls_clNameDefault 65266
-#define ExtCtrls_clNameGrayText 65267
-#define ExtCtrls_clNameHighlight 65268
-#define ExtCtrls_clNameHighlightText 65269
-#define ExtCtrls_clNameInactiveBorder 65270
-#define ExtCtrls_clNameInactiveCaption 65271
-#define ExtCtrls_clNameInactiveCaptionText 65272
-#define ExtCtrls_clNameInfoBk 65273
-#define ExtCtrls_clNameInfoText 65274
-#define ExtCtrls_clNameMenu 65275
-#define ExtCtrls_clNameMenuText 65276
-#define ExtCtrls_clNameNone 65277
-#define ExtCtrls_clNameScrollBar 65278
-#define ExtCtrls_clName3DDkShadow 65279
-#define ExtCtrls_clNameYellow 65280
-#define ExtCtrls_clNameBlue 65281
-#define ExtCtrls_clNameFuchsia 65282
-#define ExtCtrls_clNameAqua 65283
-#define ExtCtrls_clNameWhite 65284
-#define ExtCtrls_clNameMoneyGreen 65285
-#define ExtCtrls_clNameSkyBlue 65286
-#define ExtCtrls_clNameCream 65287
-#define ExtCtrls_clNameMedGray 65288
-#define ExtCtrls_clNameActiveBorder 65289
-#define ExtCtrls_clNameActiveCaption 65290
-#define ExtCtrls_clNameAppWorkSpace 65291
-#define ExtCtrls_clNameBackground 65292
-#define ExtCtrls_clNameBtnFace 65293
-#define ExtCtrls_clNameBtnHighlight 65294
-#define ExtCtrls_clNameBtnShadow 65295
-#define Consts_SListBoxMustBeVirtual 65296
-#define HelpIntfs_hNoTableOfContents 65297
-#define HelpIntfs_hNothingFound 65298
-#define HelpIntfs_hNoContext 65299
-#define HelpIntfs_hNoTopics 65300
-#define ExtCtrls_clNameBlack 65301
-#define ExtCtrls_clNameMaroon 65302
-#define ExtCtrls_clNameGreen 65303
-#define ExtCtrls_clNameOlive 65304
-#define ExtCtrls_clNameNavy 65305
-#define ExtCtrls_clNamePurple 65306
-#define ExtCtrls_clNameTeal 65307
-#define ExtCtrls_clNameGray 65308
-#define ExtCtrls_clNameSilver 65309
-#define ExtCtrls_clNameRed 65310
-#define ExtCtrls_clNameLime 65311
-#define Consts_SmkcDel 65312
-#define Consts_SmkcShift 65313
-#define Consts_SmkcCtrl 65314
-#define Consts_SmkcAlt 65315
-#define Consts_srUnknown 65316
-#define Consts_SOutOfRange 65317
-#define Consts_SInsertLineError 65318
-#define Consts_SIconToClipboard 65319
-#define Consts_SCannotOpenClipboard 65320
-#define Consts_SDuplicateMenus 65321
-#define Consts_SDockedCtlNeedsName 65322
-#define Consts_SDockTreeRemoveError 65323
-#define Consts_SDockZoneNotFound 65324
-#define Consts_SDockZoneHasNoCtl 65325
-#define Consts_SMultiSelectRequired 65326
-#define Consts_SErrorSettingCount 65327
-#define Consts_SMsgDlgNoToAll 65328
-#define Consts_SMsgDlgYesToAll 65329
-#define Consts_SmkcBkSp 65330
-#define Consts_SmkcTab 65331
-#define Consts_SmkcEsc 65332
-#define Consts_SmkcEnter 65333
-#define Consts_SmkcSpace 65334
-#define Consts_SmkcPgUp 65335
-#define Consts_SmkcPgDn 65336
-#define Consts_SmkcEnd 65337
-#define Consts_SmkcHome 65338
-#define Consts_SmkcLeft 65339
-#define Consts_SmkcUp 65340
-#define Consts_SmkcRight 65341
-#define Consts_SmkcDown 65342
-#define Consts_SmkcIns 65343
-#define Consts_SVEnhMetafiles 65344
-#define Consts_SVIcons 65345
-#define Consts_SVBitmaps 65346
-#define Consts_SMsgDlgWarning 65347
-#define Consts_SMsgDlgError 65348
-#define Consts_SMsgDlgInformation 65349
-#define Consts_SMsgDlgConfirm 65350
-#define Consts_SMsgDlgYes 65351
-#define Consts_SMsgDlgNo 65352
-#define Consts_SMsgDlgOK 65353
-#define Consts_SMsgDlgCancel 65354
-#define Consts_SMsgDlgHelp 65355
-#define Consts_SMsgDlgAbort 65356
-#define Consts_SMsgDlgRetry 65357
-#define Consts_SMsgDlgIgnore 65358
-#define Consts_SMsgDlgAll 65359
-#define Consts_SNoTimers 65360
-#define Consts_SGroupIndexTooLow 65361
-#define Consts_SNoMDIForm 65362
-#define Consts_SControlParentSetToSelf 65363
-#define Consts_SOKButton 65364
-#define Consts_SCancelButton 65365
-#define Consts_SYesButton 65366
-#define Consts_SNoButton 65367
-#define Consts_SHelpButton 65368
-#define Consts_SCloseButton 65369
-#define Consts_SIgnoreButton 65370
-#define Consts_SRetryButton 65371
-#define Consts_SAbortButton 65372
-#define Consts_SAllButton 65373
-#define Consts_SCannotDragForm 65374
-#define Consts_SVMetafiles 65375
-#define Consts_SReplaceImage 65376
-#define Consts_SImageIndexError 65377
-#define Consts_SImageReadFail 65378
-#define Consts_SImageWriteFail 65379
-#define Consts_SWindowDCError 65380
-#define Consts_SWindowClass 65381
-#define Consts_SCannotFocus 65382
-#define Consts_SParentRequired 65383
-#define Consts_SParentGivenNotAParent 65384
-#define Consts_SMDIChildNotVisible 65385
-#define Consts_SVisibleChanged 65386
-#define Consts_SCannotShowModal 65387
-#define Consts_SPropertyOutOfRange 65388
-#define Consts_SMenuIndexError 65389
-#define Consts_SMenuReinserted 65390
-#define Consts_SMenuNotFound 65391
+#define LMDRTLXConst_SLMDPNGUnknownInterlaceText 64976
+#define LMDRTLXConst_SLMDPNGCannotAssignChunkText 64977
+#define LMDRTLXConst_SLMDPNGUnexpectedEndText 64978
+#define LMDRTLXConst_SLMDPNGNoImageDataText 64979
+#define LMDRTLXConst_SLMDPNGOutMemoryText 64980
+#define LMDRTLXConst_SLMDPNGHeaderNotPresentText 64981
+#define LMDRTLConst_SLMDXmlError23 64992
+#define LMDRTLConst_SLMDXmlError24 64993
+#define LMDRTLConst_SLMDXmlError25 64994
+#define LMDRTLConst_SLMDXmlError26 64995
+#define LMDRTLConst_SLMDFCreateError 64996
+#define LMDRTLConst_SLMDFOpenError 64997
+#define LMDRTLXConst_SLMDPNGInvalidNewSize 64998
+#define LMDRTLXConst_SLMDPNGInvalidIHDRText 64999
+#define LMDRTLXConst_SLMDPNGMissingMultipleIDATText 65000
+#define LMDRTLXConst_SLMDPNGZLIBErrorText 65001
+#define LMDRTLXConst_SLMDPNGInvalidPaletteText 65002
+#define LMDRTLXConst_SLMDPNGInvalidFileHeaderText 65003
+#define LMDRTLXConst_SLMDPNGIHDRNotFirstText 65004
+#define LMDRTLXConst_SLMDPNGSizeExceedsText 65005
+#define LMDRTLXConst_SLMDPNGUnknownPalEntryText 65006
+#define LMDRTLXConst_SLMDPNGUnknownCompressionText 65007
+#define LMDRTLConst_SLMDXmlError7 65008
+#define LMDRTLConst_SLMDXmlError8 65009
+#define LMDRTLConst_SLMDXmlError9 65010
+#define LMDRTLConst_SLMDXmlError10 65011
+#define LMDRTLConst_SLMDXmlError11 65012
+#define LMDRTLConst_SLMDXmlError12 65013
+#define LMDRTLConst_SLMDXmlError13 65014
+#define LMDRTLConst_SLMDXmlError14 65015
+#define LMDRTLConst_SLMDXmlError15 65016
+#define LMDRTLConst_SLMDXmlError16 65017
+#define LMDRTLConst_SLMDXmlError17 65018
+#define LMDRTLConst_SLMDXmlError18 65019
+#define LMDRTLConst_SLMDXmlError19 65020
+#define LMDRTLConst_SLMDXmlError20 65021
+#define LMDRTLConst_SLMDXmlError21 65022
+#define LMDRTLConst_SLMDXmlError22 65023
+#define JvResources_RsEInvalidParentControl 65024
+#define JvResources_RsEInvalidWizardPage 65025
+#define JvResources_RsETilingError 65026
+#define JvResources_RsActiveStepFormat 65027
+#define JvResources_RsBackTo 65028
+#define JvResources_RsNextStep 65029
+#define JvResources_RsDestroyingArrangeSettingsNotAllowed 65030
+#define JConsts_sChangeJPGSize 65031
+#define JConsts_sJPEGError 65032
+#define JConsts_sJPEGImageFile 65033
+#define LMDRTLConst_SLMDXmlError1 65034
+#define LMDRTLConst_SLMDXmlError2 65035
+#define LMDRTLConst_SLMDXmlError3 65036
+#define LMDRTLConst_SLMDXmlError4 65037
+#define LMDRTLConst_SLMDXmlError5 65038
+#define LMDRTLConst_SLMDXmlError6 65039
+#define JvResources_RsClInactiveCaptionText 65040
+#define JvResources_RsClBtnHighlight 65041
+#define JvResources_RsCl3DDkShadow 65042
+#define JvResources_RsCl3DLight 65043
+#define JvResources_RsClInfoText 65044
+#define JvResources_RsClInfoBk 65045
+#define JvResources_RsGradientActiveCaption 65046
+#define JvResources_RsGradientInactiveCaption 65047
+#define JvResources_RsHotLight 65048
+#define JvResources_RsMenuBar 65049
+#define JvResources_RsMenuHighlight 65050
+#define JvResources_RsFirstButtonCaption 65051
+#define JvResources_RsLastButtonCaption 65052
+#define JvResources_RsFinishButtonCaption 65053
+#define JvResources_RsTitle 65054
+#define JvResources_RsSubtitle 65055
+#define JvResources_RsClInactiveCaption 65056
+#define JvResources_RsClMenu 65057
+#define JvResources_RsClWindow 65058
+#define JvResources_RsClWindowFrame 65059
+#define JvResources_RsClMenuText 65060
+#define JvResources_RsClWindowText 65061
+#define JvResources_RsClCaptionText 65062
+#define JvResources_RsClActiveBorder 65063
+#define JvResources_RsClInactiveBorder 65064
+#define JvResources_RsClAppWorkSpace 65065
+#define JvResources_RsClHighlight 65066
+#define JvResources_RsClHighlightText 65067
+#define JvResources_RsClBtnFace 65068
+#define JvResources_RsClBtnShadow 65069
+#define JvResources_RsClGrayText 65070
+#define JvResources_RsClBtnText 65071
+#define JvResources_RsClPink 65072
+#define JvResources_RsClGold 65073
+#define JvResources_RsClBrightGreen 65074
+#define JvResources_RsClTurquoise 65075
+#define JvResources_RsClPlum 65076
+#define JvResources_RsClGray25 65077
+#define JvResources_RsClRose 65078
+#define JvResources_RsClTan 65079
+#define JvResources_RsClLightYellow 65080
+#define JvResources_RsClLightGreen 65081
+#define JvResources_RsClLightTurquoise 65082
+#define JvResources_RsClPaleBlue 65083
+#define JvResources_RsClLavender 65084
+#define JvResources_RsClScrollBar 65085
+#define JvResources_RsClBackground 65086
+#define JvResources_RsClActiveCaption 65087
+#define JvResources_RsClOliveGreen 65088
+#define JvResources_RsClDarkGreen 65089
+#define JvResources_RsClDarkTeal 65090
+#define JvResources_RsClDarkBlue 65091
+#define JvResources_RsClIndigo 65092
+#define JvResources_RsClGray80 65093
+#define JvResources_RsClDarkRed 65094
+#define JvResources_RsClOrange 65095
+#define JvResources_RsClDarkYellow 65096
+#define JvResources_RsClBlueGray 65097
+#define JvResources_RsClGray50 65098
+#define JvResources_RsClLightOrange 65099
+#define JvResources_RsClSeaGreen 65100
+#define JvResources_RsClLightBlue 65101
+#define JvResources_RsClViolet 65102
+#define JvResources_RsClGray40 65103
+#define JvResources_RsClPurple 65104
+#define JvResources_RsClTeal 65105
+#define JvResources_RsClGray 65106
+#define JvResources_RsClSilver 65107
+#define JvResources_RsClRed 65108
+#define JvResources_RsClLime 65109
+#define JvResources_RsClYellow 65110
+#define JvResources_RsClBlue 65111
+#define JvResources_RsClFuchsia 65112
+#define JvResources_RsClAqua 65113
+#define JvResources_RsClWhite 65114
+#define JvResources_RsClMoneyGreen 65115
+#define JvResources_RsClSkyBlue 65116
+#define JvResources_RsClCream 65117
+#define JvResources_RsClMedGray 65118
+#define JvResources_RsClBrown 65119
+#define JclResources_RsOSVersionWin81 65120
+#define JclResources_RsOSVersionWinServer2012R2 65121
+#define ComConst_SOleError 65122
+#define ComConst_SNoMethod 65123
+#define ComConst_SVarNotObject 65124
+#define ComConst_STooManyParams 65125
+#define JvResources_RsBackButtonCaption 65126
+#define JvResources_RsNextButtonCaption 65127
+#define JvResources_RsEOwnerMustBeTCustomForm 65128
+#define JvResources_RsEProcessIsRunning 65129
+#define JvResources_RsEInvalidControlSelection 65130
+#define JvResources_RsClBlack 65131
+#define JvResources_RsClMaroon 65132
+#define JvResources_RsClGreen 65133
+#define JvResources_RsClOlive 65134
+#define JvResources_RsClNavy 65135
+#define JclResources_RsIntelCacheDescrD8 65136
+#define JclResources_RsIntelCacheDescrDC 65137
+#define JclResources_RsIntelCacheDescrDD 65138
+#define JclResources_RsIntelCacheDescrDE 65139
+#define JclResources_RsIntelCacheDescrE2 65140
+#define JclResources_RsIntelCacheDescrE3 65141
+#define JclResources_RsIntelCacheDescrE4 65142
+#define JclResources_RsIntelCacheDescrEA 65143
+#define JclResources_RsIntelCacheDescrEB 65144
+#define JclResources_RsIntelCacheDescrEC 65145
+#define JclResources_RsIntelCacheDescrF0 65146
+#define JclResources_RsIntelCacheDescrF1 65147
+#define JclResources_RsIntelCacheDescrFF 65148
+#define JclResources_RsUnknownAMDModel 65149
+#define JclResources_RsOSVersionWin8 65150
+#define JclResources_RsOSVersionWinServer2012 65151
+#define JclResources_RsIntelCacheDescr85 65152
+#define JclResources_RsIntelCacheDescr86 65153
+#define JclResources_RsIntelCacheDescr87 65154
+#define JclResources_RsIntelCacheDescrB0 65155
+#define JclResources_RsIntelCacheDescrB1 65156
+#define JclResources_RsIntelCacheDescrB2 65157
+#define JclResources_RsIntelCacheDescrB3 65158
+#define JclResources_RsIntelCacheDescrB4 65159
+#define JclResources_RsIntelCacheDescrBA 65160
+#define JclResources_RsIntelCacheDescrC0 65161
+#define JclResources_RsIntelCacheDescrCA 65162
+#define JclResources_RsIntelCacheDescrD0 65163
+#define JclResources_RsIntelCacheDescrD1 65164
+#define JclResources_RsIntelCacheDescrD2 65165
+#define JclResources_RsIntelCacheDescrD6 65166
+#define JclResources_RsIntelCacheDescrD7 65167
+#define JclResources_RsIntelCacheDescr70 65168
+#define JclResources_RsIntelCacheDescr71 65169
+#define JclResources_RsIntelCacheDescr72 65170
+#define JclResources_RsIntelCacheDescr73 65171
+#define JclResources_RsIntelCacheDescr76 65172
+#define JclResources_RsIntelCacheDescr78 65173
+#define JclResources_RsIntelCacheDescr79 65174
+#define JclResources_RsIntelCacheDescr7A 65175
+#define JclResources_RsIntelCacheDescr7B 65176
+#define JclResources_RsIntelCacheDescr7C 65177
+#define JclResources_RsIntelCacheDescr7D 65178
+#define JclResources_RsIntelCacheDescr7F 65179
+#define JclResources_RsIntelCacheDescr80 65180
+#define JclResources_RsIntelCacheDescr82 65181
+#define JclResources_RsIntelCacheDescr83 65182
+#define JclResources_RsIntelCacheDescr84 65183
+#define JclResources_RsIntelCacheDescr4F 65184
+#define JclResources_RsIntelCacheDescr50 65185
+#define JclResources_RsIntelCacheDescr51 65186
+#define JclResources_RsIntelCacheDescr52 65187
+#define JclResources_RsIntelCacheDescr55 65188
+#define JclResources_RsIntelCacheDescr56 65189
+#define JclResources_RsIntelCacheDescr57 65190
+#define JclResources_RsIntelCacheDescr59 65191
+#define JclResources_RsIntelCacheDescr5A 65192
+#define JclResources_RsIntelCacheDescr5B 65193
+#define JclResources_RsIntelCacheDescr5C 65194
+#define JclResources_RsIntelCacheDescr5D 65195
+#define JclResources_RsIntelCacheDescr60 65196
+#define JclResources_RsIntelCacheDescr66 65197
+#define JclResources_RsIntelCacheDescr67 65198
+#define JclResources_RsIntelCacheDescr68 65199
+#define JclResources_RsIntelCacheDescr3E 65200
+#define JclResources_RsIntelCacheDescr40 65201
+#define JclResources_RsIntelCacheDescr41 65202
+#define JclResources_RsIntelCacheDescr42 65203
+#define JclResources_RsIntelCacheDescr43 65204
+#define JclResources_RsIntelCacheDescr44 65205
+#define JclResources_RsIntelCacheDescr45 65206
+#define JclResources_RsIntelCacheDescr46 65207
+#define JclResources_RsIntelCacheDescr47 65208
+#define JclResources_RsIntelCacheDescr48 65209
+#define JclResources_RsIntelCacheDescr49 65210
+#define JclResources_RsIntelCacheDescr4A 65211
+#define JclResources_RsIntelCacheDescr4B 65212
+#define JclResources_RsIntelCacheDescr4C 65213
+#define JclResources_RsIntelCacheDescr4D 65214
+#define JclResources_RsIntelCacheDescr4E 65215
+#define JclResources_RsIntelCacheDescr0B 65216
+#define JclResources_RsIntelCacheDescr0C 65217
+#define JclResources_RsIntelCacheDescr0D 65218
+#define JclResources_RsIntelCacheDescr0E 65219
+#define JclResources_RsIntelCacheDescr21 65220
+#define JclResources_RsIntelCacheDescr22 65221
+#define JclResources_RsIntelCacheDescr23 65222
+#define JclResources_RsIntelCacheDescr25 65223
+#define JclResources_RsIntelCacheDescr29 65224
+#define JclResources_RsIntelCacheDescr2C 65225
+#define JclResources_RsIntelCacheDescr30 65226
+#define JclResources_RsIntelCacheDescr39 65227
+#define JclResources_RsIntelCacheDescr3A 65228
+#define JclResources_RsIntelCacheDescr3B 65229
+#define JclResources_RsIntelCacheDescr3C 65230
+#define JclResources_RsIntelCacheDescr3D 65231
+#define JclResources_RsEReplacementChar 65232
+#define JclResources_RsUnableToOpenKeyRead 65233
+#define JclResources_RsUnableToAccessValue 65234
+#define JclResources_RsWrongDataType 65235
+#define JclResources_RsInconsistentPath 65236
+#define JclResources_RsInvalidEmptyStringItem 65237
+#define JclResources_RsIntelCacheDescr00 65238
+#define JclResources_RsIntelCacheDescr01 65239
+#define JclResources_RsIntelCacheDescr02 65240
+#define JclResources_RsIntelCacheDescr03 65241
+#define JclResources_RsIntelCacheDescr04 65242
+#define JclResources_RsIntelCacheDescr05 65243
+#define JclResources_RsIntelCacheDescr06 65244
+#define JclResources_RsIntelCacheDescr08 65245
+#define JclResources_RsIntelCacheDescr09 65246
+#define JclResources_RsIntelCacheDescr0A 65247
+#define ExtCtrls_clName3DDkShadow 65248
+#define ExtCtrls_clName3DLight 65249
+#define ExtCtrls_clNameWindow 65250
+#define ExtCtrls_clNameWindowFrame 65251
+#define ExtCtrls_clNameWindowText 65252
+#define ComStrs_sTabFailClear 65253
+#define ComStrs_sTabFailDelete 65254
+#define ComStrs_sTabFailRetrieve 65255
+#define ComStrs_sTabFailGetObject 65256
+#define ComStrs_sTabFailSet 65257
+#define ComStrs_sTabFailSetObject 65258
+#define ComStrs_sTabMustBeMultiLine 65259
+#define ComStrs_sInvalidIndex 65260
+#define ComStrs_sInsertError 65261
+#define ComStrs_sPageIndexError 65262
+#define WinHelpViewer_hNoKeyword 65263
+#define ExtCtrls_clNameBtnShadow 65264
+#define ExtCtrls_clNameBtnText 65265
+#define ExtCtrls_clNameCaptionText 65266
+#define ExtCtrls_clNameDefault 65267
+#define ExtCtrls_clNameGrayText 65268
+#define ExtCtrls_clNameHighlight 65269
+#define ExtCtrls_clNameHighlightText 65270
+#define ExtCtrls_clNameInactiveBorder 65271
+#define ExtCtrls_clNameInactiveCaption 65272
+#define ExtCtrls_clNameInactiveCaptionText 65273
+#define ExtCtrls_clNameInfoBk 65274
+#define ExtCtrls_clNameInfoText 65275
+#define ExtCtrls_clNameMenu 65276
+#define ExtCtrls_clNameMenuText 65277
+#define ExtCtrls_clNameNone 65278
+#define ExtCtrls_clNameScrollBar 65279
+#define ExtCtrls_clNameLime 65280
+#define ExtCtrls_clNameYellow 65281
+#define ExtCtrls_clNameBlue 65282
+#define ExtCtrls_clNameFuchsia 65283
+#define ExtCtrls_clNameAqua 65284
+#define ExtCtrls_clNameWhite 65285
+#define ExtCtrls_clNameMoneyGreen 65286
+#define ExtCtrls_clNameSkyBlue 65287
+#define ExtCtrls_clNameCream 65288
+#define ExtCtrls_clNameMedGray 65289
+#define ExtCtrls_clNameActiveBorder 65290
+#define ExtCtrls_clNameActiveCaption 65291
+#define ExtCtrls_clNameAppWorkSpace 65292
+#define ExtCtrls_clNameBackground 65293
+#define ExtCtrls_clNameBtnFace 65294
+#define ExtCtrls_clNameBtnHighlight 65295
+#define Consts_SErrorSettingCount 65296
+#define Consts_SListBoxMustBeVirtual 65297
+#define HelpIntfs_hNoTableOfContents 65298
+#define HelpIntfs_hNothingFound 65299
+#define HelpIntfs_hNoContext 65300
+#define HelpIntfs_hNoTopics 65301
+#define ExtCtrls_clNameBlack 65302
+#define ExtCtrls_clNameMaroon 65303
+#define ExtCtrls_clNameGreen 65304
+#define ExtCtrls_clNameOlive 65305
+#define ExtCtrls_clNameNavy 65306
+#define ExtCtrls_clNamePurple 65307
+#define ExtCtrls_clNameTeal 65308
+#define ExtCtrls_clNameGray 65309
+#define ExtCtrls_clNameSilver 65310
+#define ExtCtrls_clNameRed 65311
+#define Consts_SmkcIns 65312
+#define Consts_SmkcDel 65313
+#define Consts_SmkcShift 65314
+#define Consts_SmkcCtrl 65315
+#define Consts_SmkcAlt 65316
+#define Consts_srUnknown 65317
+#define Consts_SOutOfRange 65318
+#define Consts_SInsertLineError 65319
+#define Consts_SIconToClipboard 65320
+#define Consts_SCannotOpenClipboard 65321
+#define Consts_SDuplicateMenus 65322
+#define Consts_SDockedCtlNeedsName 65323
+#define Consts_SDockTreeRemoveError 65324
+#define Consts_SDockZoneNotFound 65325
+#define Consts_SDockZoneHasNoCtl 65326
+#define Consts_SMultiSelectRequired 65327
+#define Consts_SMsgDlgAll 65328
+#define Consts_SMsgDlgNoToAll 65329
+#define Consts_SMsgDlgYesToAll 65330
+#define Consts_SmkcBkSp 65331
+#define Consts_SmkcTab 65332
+#define Consts_SmkcEsc 65333
+#define Consts_SmkcEnter 65334
+#define Consts_SmkcSpace 65335
+#define Consts_SmkcPgUp 65336
+#define Consts_SmkcPgDn 65337
+#define Consts_SmkcEnd 65338
+#define Consts_SmkcHome 65339
+#define Consts_SmkcLeft 65340
+#define Consts_SmkcUp 65341
+#define Consts_SmkcRight 65342
+#define Consts_SmkcDown 65343
+#define Consts_SVMetafiles 65344
+#define Consts_SVEnhMetafiles 65345
+#define Consts_SVIcons 65346
+#define Consts_SVBitmaps 65347
+#define Consts_SMsgDlgWarning 65348
+#define Consts_SMsgDlgError 65349
+#define Consts_SMsgDlgInformation 65350
+#define Consts_SMsgDlgConfirm 65351
+#define Consts_SMsgDlgYes 65352
+#define Consts_SMsgDlgNo 65353
+#define Consts_SMsgDlgOK 65354
+#define Consts_SMsgDlgCancel 65355
+#define Consts_SMsgDlgHelp 65356
+#define Consts_SMsgDlgAbort 65357
+#define Consts_SMsgDlgRetry 65358
+#define Consts_SMsgDlgIgnore 65359
+#define Consts_SMenuNotFound 65360
+#define Consts_SNoTimers 65361
+#define Consts_SGroupIndexTooLow 65362
+#define Consts_SNoMDIForm 65363
+#define Consts_SControlParentSetToSelf 65364
+#define Consts_SOKButton 65365
+#define Consts_SCancelButton 65366
+#define Consts_SYesButton 65367
+#define Consts_SNoButton 65368
+#define Consts_SHelpButton 65369
+#define Consts_SCloseButton 65370
+#define Consts_SIgnoreButton 65371
+#define Consts_SRetryButton 65372
+#define Consts_SAbortButton 65373
+#define Consts_SAllButton 65374
+#define Consts_SCannotDragForm 65375
+#define Consts_SInvalidImageList 65376
+#define Consts_SReplaceImage 65377
+#define Consts_SImageIndexError 65378
+#define Consts_SImageReadFail 65379
+#define Consts_SImageWriteFail 65380
+#define Consts_SWindowDCError 65381
+#define Consts_SWindowClass 65382
+#define Consts_SCannotFocus 65383
+#define Consts_SParentRequired 65384
+#define Consts_SParentGivenNotAParent 65385
+#define Consts_SMDIChildNotVisible 65386
+#define Consts_SVisibleChanged 65387
+#define Consts_SCannotShowModal 65388
+#define Consts_SPropertyOutOfRange 65389
+#define Consts_SMenuIndexError 65390
+#define Consts_SMenuReinserted 65391
 #define RTLConsts_SThreadError 65392
 #define RTLConsts_SMissingDateTimeField 65393
 #define RTLConsts_SInvalidDateTime 65394
@@ -424,11 +425,11 @@
 #define Consts_SInvalidPixelFormat 65400
 #define Consts_SScanLine 65401
 #define Consts_SChangeIconSize 65402
-#define Consts_SUnknownClipboardFormat 65403
-#define Consts_SOutOfResources 65404
-#define Consts_SNoCanvasHandle 65405
-#define Consts_SInvalidImageSize 65406
-#define Consts_SInvalidImageList 65407
+#define Consts_SUnknownExtension 65403
+#define Consts_SUnknownClipboardFormat 65404
+#define Consts_SOutOfResources 65405
+#define Consts_SNoCanvasHandle 65406
+#define Consts_SInvalidImageSize 65407
 #define RTLConsts_SInvalidPropertyPath 65408
 #define RTLConsts_SInvalidPropertyValue 65409
 #define RTLConsts_SListCapacityError 65410
@@ -559,11 +560,13 @@
 #define SysConst_SRangeError 65535
 STRINGTABLE
 BEGIN
+	LMDRTLXConst_SLMDPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
 	LMDRTLXConst_SLMDPNGCannotAssignChunkText,	"The chunks must be compatible to be assigned."
 	LMDRTLXConst_SLMDPNGUnexpectedEndText,	"This \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file."
 	LMDRTLXConst_SLMDPNGNoImageDataText,	"This \"Portable Network Graphics\" image contains no data."
 	LMDRTLXConst_SLMDPNGOutMemoryText,	"Some operation could not be performed because the system is out of resources. Close some windows and try again."
 	LMDRTLXConst_SLMDPNGHeaderNotPresentText,	"This operation is not valid because the current image contains no valid header."
+	LMDRTLConst_SLMDXmlError23,	"Read data error"
 	LMDRTLConst_SLMDXmlError24,	"Read value error: Invalid type"
 	LMDRTLConst_SLMDXmlError25,	"Write value error: Invalid type"
 	LMDRTLConst_SLMDXmlError26,	"This encoding isn't supported"
@@ -579,7 +582,7 @@ BEGIN
 	LMDRTLXConst_SLMDPNGSizeExceedsText,	"This \"Portable Network Graphics\" image is not supported because either it's width or height exceeds the maximum size, which is 65535 pixels length."
 	LMDRTLXConst_SLMDPNGUnknownPalEntryText,	"There is no such palette entry."
 	LMDRTLXConst_SLMDPNGUnknownCompressionText,	"This \"Portable Network Graphics\" image is encoded with an unknown compression scheme which could not be decoded."
-	LMDRTLXConst_SLMDPNGUnknownInterlaceText,	"This \"Portable Network Graphics\" image uses an unknown interlace scheme which could not be decoded."
+	LMDRTLConst_SLMDXmlError7,	"Attribute \"%s\" not found"
 	LMDRTLConst_SLMDXmlError8,	"Attribute \"%s\" not set"
 	LMDRTLConst_SLMDXmlError9,	"This feature isn't implemented yet in LMDXML"
 	LMDRTLConst_SLMDXmlError10,	"Error: child element \"%s\" not found."
@@ -595,7 +598,7 @@ BEGIN
 	LMDRTLConst_SLMDXmlError20,	"Waiting attribute value"
 	LMDRTLConst_SLMDXmlError21,	"Waiting string constant"
 	LMDRTLConst_SLMDXmlError22,	"Waiting \"%s\""
-	LMDRTLConst_SLMDXmlError23,	"Read data error"
+	JvResources_RsEInvalidParentControl,	"The Parent should be TJvWizard or a descendant"
 	JvResources_RsEInvalidWizardPage,	"The pages belong to another wizard"
 	JvResources_RsETilingError,	"Tiling only works on images with dimensions > 0"
 	JvResources_RsActiveStepFormat,	"Step %0:d of %1:d"
@@ -611,7 +614,7 @@ BEGIN
 	LMDRTLConst_SLMDXmlError4,	"BinaryXML read error: incorrect node type"
 	LMDRTLConst_SLMDXmlError5,	"BinaryXML write error: incorrect node type"
 	LMDRTLConst_SLMDXmlError6,	"Invalid attribute vaalue \"%s\" of element \"%s\".\r\nValid values:\r\n%s"
-	LMDRTLConst_SLMDXmlError7,	"Attribute \"%s\" not found"
+	JvResources_RsClInactiveCaptionText,	"Inactive window title bar text"
 	JvResources_RsClBtnHighlight,	"Button highlight"
 	JvResources_RsCl3DDkShadow,	"Dark shadow 3D elements"
 	JvResources_RsCl3DLight,	"Highlight 3D elements"
@@ -627,7 +630,7 @@ BEGIN
 	JvResources_RsFinishButtonCaption,	"&Finish"
 	JvResources_RsTitle,	"Title"
 	JvResources_RsSubtitle,	"Subtitle"
-	JvResources_RsEInvalidParentControl,	"The Parent should be TJvWizard or a descendant"
+	JvResources_RsClInactiveCaption,	"Inactive window title bar"
 	JvResources_RsClMenu,	"Menu background"
 	JvResources_RsClWindow,	"Window background"
 	JvResources_RsClWindowFrame,	"Window frame"
@@ -643,7 +646,7 @@ BEGIN
 	JvResources_RsClBtnShadow,	"Button shadow"
 	JvResources_RsClGrayText,	"Dimmed text"
 	JvResources_RsClBtnText,	"Button text"
-	JvResources_RsClInactiveCaptionText,	"Inactive window title bar text"
+	JvResources_RsClPink,	"Pink"
 	JvResources_RsClGold,	"Gold"
 	JvResources_RsClBrightGreen,	"Bright Green"
 	JvResources_RsClTurquoise,	"Turquoise"
@@ -659,7 +662,7 @@ BEGIN
 	JvResources_RsClScrollBar,	"Scrollbar"
 	JvResources_RsClBackground,	"Desktop background"
 	JvResources_RsClActiveCaption,	"Active window title bar"
-	JvResources_RsClInactiveCaption,	"Inactive window title bar"
+	JvResources_RsClOliveGreen,	"Olive Green"
 	JvResources_RsClDarkGreen,	"Dark Green"
 	JvResources_RsClDarkTeal,	"Dark Teal"
 	JvResources_RsClDarkBlue,	"Dark Blue"
@@ -675,7 +678,7 @@ BEGIN
 	JvResources_RsClLightBlue,	"Light Blue"
 	JvResources_RsClViolet,	"Violet"
 	JvResources_RsClGray40,	"Gray 40%"
-	JvResources_RsClPink,	"Pink"
+	JvResources_RsClPurple,	"Purple"
 	JvResources_RsClTeal,	"Teal"
 	JvResources_RsClGray,	"Gray"
 	JvResources_RsClSilver,	"Silver"
@@ -691,7 +694,7 @@ BEGIN
 	JvResources_RsClCream,	"Cream"
 	JvResources_RsClMedGray,	"Medium gray"
 	JvResources_RsClBrown,	"Brown"
-	JvResources_RsClOliveGreen,	"Olive Green"
+	JclResources_RsOSVersionWin81,	"Windows 8.1"
 	JclResources_RsOSVersionWinServer2012R2,	"Windows Server 2012 R2"
 	ComConst_SOleError,	"OLE error %.8x"
 	ComConst_SNoMethod,	"Method '%s' not supported by automation object"
@@ -707,7 +710,7 @@ BEGIN
 	JvResources_RsClGreen,	"Green"
 	JvResources_RsClOlive,	"Olive green"
 	JvResources_RsClNavy,	"Navy blue"
-	JvResources_RsClPurple,	"Purple"
+	JclResources_RsIntelCacheDescrD8,	"3rd-level cache: 4 MByte, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrDC,	"3rd-level cache: 1.5 MByte, 12-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrDD,	"3rd-level cache: 3 MByte, 12-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrDE,	"3rd-level cache: 6 MByte, 12-way set associative, 64 byte line size"
@@ -723,7 +726,7 @@ BEGIN
 	JclResources_RsUnknownAMDModel,	"Unknown AMD (Model %d)"
 	JclResources_RsOSVersionWin8,	"Windows 8"
 	JclResources_RsOSVersionWinServer2012,	"Windows Server 2012"
-	JclResources_RsOSVersionWin81,	"Windows 8.1"
+	JclResources_RsIntelCacheDescr85,	"2nd-level cache: 2 MBytes, 8-way associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr86,	"2nd-level cache: 512 KByte, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr87,	"2nd-level cache: 1 MByte, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrB0,	"Instruction TLB: 4 KByte pages, 4-way set associative, 128 entries"
@@ -739,7 +742,7 @@ BEGIN
 	JclResources_RsIntelCacheDescrD2,	"3rd-level cache: 2 MByte, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrD6,	"3rd-level cache: 1 MByte, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrD7,	"3rd-level cache: 2 MByte, 8-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescrD8,	"3rd-level cache: 4 MByte, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr70,	"Trace cache: 12 K-Ops, 8-way set associative"
 	JclResources_RsIntelCacheDescr71,	"Trace cache: 16 K-Ops, 8-way set associative"
 	JclResources_RsIntelCacheDescr72,	"Trace cache: 32 K-Ops, 8-way set associative"
 	JclResources_RsIntelCacheDescr73,	"Trace cache: 64 K-Ops, 8-way set associative"
@@ -755,7 +758,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr82,	"2nd-level cache: 256 KBytes, 8-way associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr83,	"2nd-level cache: 512 KBytes, 8-way associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr84,	"2nd-level cache: 1 MBytes, 8-way associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr85,	"2nd-level cache: 2 MBytes, 8-way associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr4F,	"Instruction TLB: 4 KByte pages, 32 Entries"
 	JclResources_RsIntelCacheDescr50,	"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 64 Entries"
 	JclResources_RsIntelCacheDescr51,	"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 128 Entries"
 	JclResources_RsIntelCacheDescr52,	"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 256 Entries"
@@ -771,7 +774,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr66,	"1st-level data cache: 8 KBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr67,	"1st-level data cache: 16 KBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr68,	"1st-level data cache: 32 KBytes, 4-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr70,	"Trace cache: 12 K-Ops, 8-way set associative"
+	JclResources_RsIntelCacheDescr3E,	"2nd-level cache: 512 KBytes, 4-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr40,	"No 2nd-level cache or, if processor contains a valid 2nd-level cache, no 3rd-level cache"
 	JclResources_RsIntelCacheDescr41,	"2nd-level cache: 128 KBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr42,	"2nd-level cache: 256 KBytes, 4-way set associative, 32 byte line size"
@@ -787,7 +790,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr4C,	"3rd-level cache: 12MByte, 12-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr4D,	"3rd-level cache: 16MByte, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr4E,	"2nd-level cache: 6MByte, 24-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr4F,	"Instruction TLB: 4 KByte pages, 32 Entries"
+	JclResources_RsIntelCacheDescr0B,	"Instruction TLB: 4 MByte pages, 4-way set associative, 4 entries"
 	JclResources_RsIntelCacheDescr0C,	"1st level data cache: 16 KBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr0D,	"1st level data cache: 16 KBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr0E,	"1st level data cache: 24 KBytes, 6-way set associative, 64 byte line size"
@@ -803,7 +806,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr3B,	"2nd-level cache: 128 KBytes, 2-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr3C,	"2nd-level cache: 256 KBytes, 4-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr3D,	"2nd-level cache: 384 KBytes, 6-way set associative, sectored cache, 64-byte line size"
-	JclResources_RsIntelCacheDescr3E,	"2nd-level cache: 512 KBytes, 4-way set associative, sectored cache, 64-byte line size"
+	JclResources_RsEReplacementChar,	"Failed to get ANSI replacement character"
 	JclResources_RsUnableToOpenKeyRead,	"Unable to open key \"%s\\%s\" for read"
 	JclResources_RsUnableToAccessValue,	"Unable to open key \"%s\\%s\" and access value \"%s\""
 	JclResources_RsWrongDataType,	"\"%s\\%s\\%s\" is of wrong kind or size"
@@ -819,7 +822,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr08,	"1st level instruction cache: 16 KBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr09,	"1st level instruction cache: 32 KBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr0A,	"1st level data cache: 8 KBytes, 2-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr0B,	"Instruction TLB: 4 MByte pages, 4-way set associative, 4 entries"
+	ExtCtrls_clName3DDkShadow,	"3D Dark Shadow"
 	ExtCtrls_clName3DLight,	"3D Light"
 	ExtCtrls_clNameWindow,	"Window Background"
 	ExtCtrls_clNameWindowFrame,	"Window Frame"
@@ -835,7 +838,7 @@ BEGIN
 	ComStrs_sInsertError,	"Unable to insert an item"
 	ComStrs_sPageIndexError,	"%d is an invalid PageIndex value.  PageIndex must be between 0 and %d"
 	WinHelpViewer_hNoKeyword,	"No help keyword specified."
-	JclResources_RsEReplacementChar,	"Failed to get ANSI replacement character"
+	ExtCtrls_clNameBtnShadow,	"Button Shadow"
 	ExtCtrls_clNameBtnText,	"Button Text"
 	ExtCtrls_clNameCaptionText,	"Caption Text"
 	ExtCtrls_clNameDefault,	"Default"
@@ -851,7 +854,7 @@ BEGIN
 	ExtCtrls_clNameMenuText,	"Menu Text"
 	ExtCtrls_clNameNone,	"None"
 	ExtCtrls_clNameScrollBar,	"Scroll Bar"
-	ExtCtrls_clName3DDkShadow,	"3D Dark Shadow"
+	ExtCtrls_clNameLime,	"Lime"
 	ExtCtrls_clNameYellow,	"Yellow"
 	ExtCtrls_clNameBlue,	"Blue"
 	ExtCtrls_clNameFuchsia,	"Fuchsia"
@@ -867,7 +870,7 @@ BEGIN
 	ExtCtrls_clNameBackground,	"Background"
 	ExtCtrls_clNameBtnFace,	"Button Face"
 	ExtCtrls_clNameBtnHighlight,	"Button Highlight"
-	ExtCtrls_clNameBtnShadow,	"Button Shadow"
+	Consts_SErrorSettingCount,	"Error setting %s.Count"
 	Consts_SListBoxMustBeVirtual,	"Listbox (%s) style must be virtual in order to set Count"
 	HelpIntfs_hNoTableOfContents,	"Unable to find a Table of Contents"
 	HelpIntfs_hNothingFound,	"No help found for %s"
@@ -883,7 +886,7 @@ BEGIN
 	ExtCtrls_clNameGray,	"Gray"
 	ExtCtrls_clNameSilver,	"Silver"
 	ExtCtrls_clNameRed,	"Red"
-	ExtCtrls_clNameLime,	"Lime"
+	Consts_SmkcIns,	"Ins"
 	Consts_SmkcDel,	"Del"
 	Consts_SmkcShift,	"Shift+"
 	Consts_SmkcCtrl,	"Ctrl+"
@@ -899,7 +902,7 @@ BEGIN
 	Consts_SDockZoneNotFound,	" - Dock zone not found"
 	Consts_SDockZoneHasNoCtl,	" - Dock zone has no control"
 	Consts_SMultiSelectRequired,	"Multiselect mode must be on for this feature"
-	Consts_SErrorSettingCount,	"Error setting %s.Count"
+	Consts_SMsgDlgAll,	"&All"
 	Consts_SMsgDlgNoToAll,	"N&o to All"
 	Consts_SMsgDlgYesToAll,	"Yes to &All"
 	Consts_SmkcBkSp,	"BkSp"
@@ -915,7 +918,7 @@ BEGIN
 	Consts_SmkcUp,	"Up"
 	Consts_SmkcRight,	"Right"
 	Consts_SmkcDown,	"Down"
-	Consts_SmkcIns,	"Ins"
+	Consts_SVMetafiles,	"Metafiles"
 	Consts_SVEnhMetafiles,	"Enhanced Metafiles"
 	Consts_SVIcons,	"Icons"
 	Consts_SVBitmaps,	"Bitmaps"
@@ -931,7 +934,7 @@ BEGIN
 	Consts_SMsgDlgAbort,	"&Abort"
 	Consts_SMsgDlgRetry,	"&Retry"
 	Consts_SMsgDlgIgnore,	"&Ignore"
-	Consts_SMsgDlgAll,	"&All"
+	Consts_SMenuNotFound,	"Sub-menu is not in menu"
 	Consts_SNoTimers,	"Not enough timers available"
 	Consts_SGroupIndexTooLow,	"GroupIndex cannot be less than a previous menu item's GroupIndex"
 	Consts_SNoMDIForm,	"Cannot create form. No MDI forms are currently active"
@@ -947,7 +950,7 @@ BEGIN
 	Consts_SAbortButton,	"Abort"
 	Consts_SAllButton,	"&All"
 	Consts_SCannotDragForm,	"Cannot drag a form"
-	Consts_SVMetafiles,	"Metafiles"
+	Consts_SInvalidImageList,	"Invalid ImageList"
 	Consts_SReplaceImage,	"Unable to Replace Image"
 	Consts_SImageIndexError,	"Invalid ImageList Index"
 	Consts_SImageReadFail,	"Failed to read ImageList data from stream"
@@ -963,7 +966,6 @@ BEGIN
 	Consts_SPropertyOutOfRange,	"%s property out of range"
 	Consts_SMenuIndexError,	"Menu index out of range"
 	Consts_SMenuReinserted,	"Menu inserted twice"
-	Consts_SMenuNotFound,	"Sub-menu is not in menu"
 	RTLConsts_SThreadError,	"Thread Error: %s (%d)"
 	RTLConsts_SMissingDateTimeField,	"?"
 	RTLConsts_SInvalidDateTime,	"''%s'' is not a valid date and time"
@@ -975,11 +977,11 @@ BEGIN
 	Consts_SInvalidPixelFormat,	"Invalid pixel format"
 	Consts_SScanLine,	"Scan line index out of range"
 	Consts_SChangeIconSize,	"Cannot change the size of an icon"
+	Consts_SUnknownExtension,	"Unknown picture file extension (.%s)"
 	Consts_SUnknownClipboardFormat,	"Unsupported clipboard format"
 	Consts_SOutOfResources,	"Out of system resources"
 	Consts_SNoCanvasHandle,	"Canvas does not allow drawing"
 	Consts_SInvalidImageSize,	"Invalid image size"
-	Consts_SInvalidImageList,	"Invalid ImageList"
 	RTLConsts_SInvalidPropertyPath,	"Invalid property path"
 	RTLConsts_SInvalidPropertyValue,	"Invalid property value"
 	RTLConsts_SListCapacityError,	"List capacity out of bounds (%d)"

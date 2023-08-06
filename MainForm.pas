@@ -9,7 +9,7 @@ uses
   JvPanel, ComCtrls, JvExComCtrls, JvProgressBar, JvStatusBar, ShellAPI,
   JvArrowButton, JvComponentBase, JvZlibMultiple, JclCompression,
   FrameApache, FrameCAroot, FrameLocalDNS, JvCreateProcess, JvMenus, Menus,
-  JvWizard, JvWizardRouteMapSteps, StdCtrls, Buttons, LMDPNGImage;
+  JvWizard, JvWizardRouteMapSteps, StdCtrls, Buttons, LMDPNGImage, CheckLst;
 
 type
   TForm2 = class(TForm)
@@ -66,6 +66,7 @@ type
     PageControl1: TPageControl;
     Button2: TButton;
     TabSheet1: TTabSheet;
+    CheckListBox1: TCheckListBox;
     procedure JvOutlookBar1Pages0Buttons0Click(Sender: TObject);
     procedure JvOutlookBar1Pages0Buttons1Click(Sender: TObject);
     procedure JvOutlookBar1Pages0Buttons2Click(Sender: TObject);
@@ -138,6 +139,11 @@ begin
 
   FrameCAroot.Visible := true;
   JvWizard1.Visible := true;
+
+  SpeedButton1.Left := Edit1.Width + 10;
+  SpeedButton2.Left := Edit2.Width + 10;
+  SpeedButton3.Left := Edit3.Width + 10;
+
 end;
 
 procedure TForm2.JvOutlookBar1Pages0Buttons2Click(Sender: TObject);
@@ -179,11 +185,12 @@ begin
   FrameLocalDNS.Visible := false;
 
   Panel1.Visible := false;
-  Label1.Visible := false;
+  Label4.Visible := false;
 
   JvWizardRouteMapSteps1.ActiveStepFormat :=
   ' Step: %0:d of %1:d';
 
+  self.Image1.Picture.LoadFromFile('images\windark.png');
   JvWizard1.Visible := false;
 end;
 
@@ -421,10 +428,10 @@ begin
     // download ?
     if not(CheckBox1.Checked) then
     begin
-      Label1.Visible := true;
+      Label4.Visible := true;
       if DownLoadFile(Edit1.Text,Edit2.Text) then
       begin
-        Label1.Visible := false;
+        Label4.Visible := false;
         ShowMessage('download success !!!');
       end else
       raise Exception.Create('Error while downloading:' +

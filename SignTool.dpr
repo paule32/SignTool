@@ -2,7 +2,6 @@ program SignTool;
 
 uses
   Forms,
-  wizardA in 'wizardA.pas' {Form1},
   MainForm in 'MainForm.pas' {Form2},
   FrameApache in 'FrameApache.pas' {Frame1: TFrame},
   FrameCAroot in 'FrameCAroot.pas' {Frame2: TFrame},
