@@ -1,14 +1,14 @@
-
+# the list of ignored source package files:
+exe/*
+tmp/*
 *.dcu
 *.~dfm
 *.~pas
-images/apache_128.bmp.z
-MainForm.ddp
-pack/borlndmm.dll
+*.ddp
 *.dll
-pack/SignTool.chm
+*.chm
 *.exe
 *.zip
-resources.RES
+*.RES
 *.~ddp
-SignTool.~dpr
+*.~dpr
