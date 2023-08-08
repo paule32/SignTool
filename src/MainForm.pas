@@ -9,10 +9,11 @@ uses
   JvPanel, ComCtrls, JvExComCtrls, JvProgressBar, JvStatusBar, ShellAPI,
   JvArrowButton, JvComponentBase, JvZlibMultiple, JclCompression,
   FrameApache, FrameCAroot, FrameLocalDNS, JvCreateProcess, JvMenus, Menus,
-  JvWizard, JvWizardRouteMapSteps, StdCtrls, Buttons, LMDPNGImage, CheckLst;
+  JvWizard, JvWizardRouteMapSteps, StdCtrls, Buttons, LMDPNGImage, CheckLst,
+  FrameCAwizard;
 
 type
-  TForm2 = class(TForm)
+  TMainWindow = class(TForm)
     JvStatusBar1: TJvStatusBar;
     JvProgressBar1: TJvProgressBar;
     JvPanel1: TJvPanel;
@@ -25,32 +26,6 @@ type
     ImageList2: TImageList;
     Panel1: TPanel;
     Panel2: TPanel;
-    JvWizard1: TJvWizard;
-    JvWizardInteriorPage1: TJvWizardInteriorPage;
-    Image1: TImage;
-    SpeedButton1: TSpeedButton;
-    Label1: TLabel;
-    Label2: TLabel;
-    SpeedButton2: TSpeedButton;
-    Label3: TLabel;
-    SpeedButton3: TSpeedButton;
-    Label4: TLabel;
-    Edit1: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Button1: TButton;
-    CheckBox1: TCheckBox;
-    CheckBox2: TCheckBox;
-    JvWizardInteriorPage2: TJvWizardInteriorPage;
-    Image2: TImage;
-    Label5: TLabel;
-    Label6: TLabel;
-    Label7: TLabel;
-    SpeedButton4: TSpeedButton;
-    Edit4: TEdit;
-    Edit5: TEdit;
-    Edit6: TEdit;
-    JvWizardRouteMapSteps1: TJvWizardRouteMapSteps;
     JvMainMenu1: TJvMainMenu;
     File1: TMenuItem;
     DefaultSettings1: TMenuItem;
@@ -67,23 +42,15 @@ type
     Button2: TButton;
     TabSheet1: TTabSheet;
     CheckListBox1: TCheckListBox;
+    Splitter1: TSplitter;
+
     procedure JvOutlookBar1Pages0Buttons0Click(Sender: TObject);
     procedure JvOutlookBar1Pages0Buttons1Click(Sender: TObject);
     procedure JvOutlookBar1Pages0Buttons2Click(Sender: TObject);
+
     procedure FormShow(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure Edit1Enter(Sender: TObject);
-    procedure Edit1Exit(Sender: TObject);
-    procedure Edit2Exit(Sender: TObject);
-    procedure Edit3Enter(Sender: TObject);
-    procedure Edit3Exit(Sender: TObject);
-    procedure Edit2Enter(Sender: TObject);
-    procedure Edit4Enter(Sender: TObject);
-    procedure Edit4Exit(Sender: TObject);
-    procedure Edit5Enter(Sender: TObject);
-    procedure Edit5Exit(Sender: TObject);
-    procedure Edit6Enter(Sender: TObject);
-    procedure Edit6Exit(Sender: TObject);
+
     procedure Button1Click(Sender: TObject);
     procedure SpeedButton3Click(Sender: TObject);
     procedure SpeedButton1Click(Sender: TObject);
@@ -95,32 +62,40 @@ type
     procedure ClearFields1Click(Sender: TObject);
     procedure DefaultSettings1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+
     procedure JvWizard1HelpButtonClick(Sender: TObject);
-    procedure JvWizardInteriorPage1NextButtonClick(Sender: TObject;
-      var Stop: Boolean);
-    procedure JvWizardInteriorPage2NextButtonClick(Sender: TObject;
+    procedure JvWizardInteriorPage1NextButtonClick(
+      Sender: TObject; var
+      Stop  : Boolean);
+
+    procedure JvWizardInteriorPage2FinishButtonClick(Sender: TObject;
       var Stop: Boolean);
   private
     { Private declarations }
   public
     FrameApache  : TFrame1;
-    FrameCAroot  : TFrame2;
+    FrameCAroot  : TCArootFrame;
     FrameLocalDNS: TFrame3;
+
+    FrameCAwizard: TFrame2;
   end;
 
 var
-  Form2: TForm2;
+  MainWindow: TMainWindow;
 
 implementation
 
 {$R *.dfm}
-{$R resources.res}
 
-procedure TForm2.JvOutlookBar1Pages0Buttons0Click(Sender: TObject);
+const
+  iniFileName = 'SignTool.ini';
+
+procedure TMainWindow.JvOutlookBar1Pages0Buttons0Click(Sender: TObject);
 begin
   Panel1.Visible := true;
-  JvWizard1.Visible := false;
-  
+  FrameCAwizard.Visible := false;
+  FrameCAwizard.JvWizard1.Visible := false;
+
   FrameApache  .Visible := false;
   FrameCAroot  .Visible := false;
   FrameLocalDNS.Visible := false;
@@ -128,28 +103,32 @@ begin
   FrameApache.Visible := true;
 end;
 
-procedure TForm2.JvOutlookBar1Pages0Buttons1Click(Sender: TObject);
+procedure TMainWindow.JvOutlookBar1Pages0Buttons1Click(Sender: TObject);
 begin
   Panel1.Visible := true;
-  JvWizard1.Visible := false;
+
+  FrameCAwizard.Visible := false;
+  FrameCAwizard.JvWizard1.Visible := false;
 
   FrameApache  .Visible := false;
   FrameCAroot  .Visible := false;
   FrameLocalDNS.Visible := false;
 
-  FrameCAroot.Visible := true;
-  JvWizard1.Visible := true;
+  FrameCAroot.Visible   := true;
+  FrameCAwizard.Visible := true;
+  FrameCAwizard.JvWizard1.Visible := true;
 
-  SpeedButton1.Left := Edit1.Width + 10;
-  SpeedButton2.Left := Edit2.Width + 10;
-  SpeedButton3.Left := Edit3.Width + 10;
+  FrameCAwizard.SpeedButton1.Left := FrameCAwizard.Edit1.Width + 10;
+  FrameCAwizard.SpeedButton2.Left := FrameCAwizard.Edit2.Width + 10;
+  FrameCAwizard.SpeedButton3.Left := FrameCAwizard.Edit3.Width + 10;
 
 end;
 
-procedure TForm2.JvOutlookBar1Pages0Buttons2Click(Sender: TObject);
+procedure TMainWindow.JvOutlookBar1Pages0Buttons2Click(Sender: TObject);
 begin
   Panel1.Visible := true;
-  JvWizard1.Visible := false;
+  FrameCAwizard.Visible := false;
+  FrameCAwizard.JvWizard1.Visible := false;
 
   FrameApache  .Visible := false;
   FrameCAroot  .Visible := false;
@@ -158,7 +137,7 @@ begin
   FrameLocalDNS.Visible := true;
 end;
 
-procedure TForm2.FormShow(Sender: TObject);
+procedure TMainWindow.FormShow(Sender: TObject);
 begin
   JvGradientCaption1.Active := true;
   Width := Width + 2;
@@ -167,17 +146,22 @@ begin
   LoadSettings1Click(Sender);
 end;
 
-procedure TForm2.FormCreate(Sender: TObject);
+procedure TMainWindow.FormCreate(Sender: TObject);
 begin
   FrameApache := TFrame1.Create(Panel1);
   FrameApache.Parent  := Panel1;
   FrameApache.Align   := alClient;
   FrameApache.Visible := false;
 
-  FrameCAroot := TFrame2.Create(Panel1);
+  FrameCAroot := TCArootFrame.Create(Panel1);
   FrameCAroot.Parent  := Panel1;
   FrameCAroot.Align   := alClient;
   FrameCAroot.Visible := false;
+
+  FrameCAwizard := TFrame2.Create(Panel2);
+  FrameCAwizard.Parent  := Panel2;
+  FrameCAwizard.Align   := alClient;
+  FrameCAwizard.Visible := false;
 
   FrameLocalDNS := TFrame3.Create(Panel1);
   FrameLocalDNS.Parent  := Panel1;
@@ -185,39 +169,24 @@ begin
   FrameLocalDNS.Visible := false;
 
   Panel1.Visible := false;
-  Label4.Visible := false;
+  FrameCAwizard.Label4.Visible := false;
 
-  JvWizardRouteMapSteps1.ActiveStepFormat :=
+  FrameCAwizard.JvWizardRouteMapSteps1.ActiveStepFormat :=
   ' Step: %0:d of %1:d';
 
-  self.Image1.Picture.LoadFromFile('images\windark.png');
-  JvWizard1.Visible := false;
+  FrameCAwizard.Image1.Picture.LoadFromFile('images\windark.png');
+  FrameCAwizard.Image2.Picture.LoadFromFile('images\windark.png');
+
+  FrameCAwizard.JvWizard1.Visible := false;
 end;
 
-procedure TForm2.Edit1Enter(Sender: TObject); begin Edit1.Color := clYellow; end;
-procedure TForm2.Edit1Exit (Sender: TObject); begin Edit1.Color := clWhite;  end;
 
-procedure TForm2.Edit2Exit (Sender: TObject); begin Edit2.Color := clYellow; end;
-procedure TForm2.Edit2Enter(Sender: TObject); begin Edit2.Color := clYellow; end;
-
-procedure TForm2.Edit3Enter(Sender: TObject); begin Edit3.Color := clYellow; end;
-procedure TForm2.Edit3Exit (Sender: TObject); begin Edit3.Color := clWhite;  end;
-
-procedure TForm2.Edit4Enter(Sender: TObject); begin Edit4.Color := clYellow; end;
-procedure TForm2.Edit4Exit (Sender: TObject); begin Edit4.Color := clWhite;  end;
-
-procedure TForm2.Edit5Enter(Sender: TObject); begin Edit5.Color := clYellow; end;
-procedure TForm2.Edit5Exit (Sender: TObject); begin Edit5.Color := clWhite ; end;
-
-procedure TForm2.Edit6Enter(Sender: TObject); begin Edit6.Color := clYellow; end;
-procedure TForm2.Edit6Exit (Sender: TObject); begin Edit6.Color := clWhite ; end;
-
-procedure TForm2.Button1Click(Sender: TObject);
+procedure TMainWindow.Button1Click(Sender: TObject);
 begin
   ClearFields1Click(Sender);
 end;
 
-procedure TForm2.SpeedButton3Click(Sender: TObject);
+procedure TMainWindow.SpeedButton3Click(Sender: TObject);
 begin
   if not(OpenDialog1.Execute) then
   begin
@@ -225,11 +194,11 @@ begin
     exit;
   end;
 
-  Edit1.Text := OpenDialog1.FileName;
-  Edit1.SetFocus;
+  FrameCAwizard.Edit1.Text := OpenDialog1.FileName;
+  FrameCAwizard.Edit1.SetFocus;
 end;
 
-procedure TForm2.SpeedButton1Click(Sender: TObject);
+procedure TMainWindow.SpeedButton1Click(Sender: TObject);
 begin
   if not(OpenDialog1.Execute) then
   begin
@@ -237,11 +206,11 @@ begin
     exit;
   end;
 
-  Edit2.Text := OpenDialog1.FileName;
-  Edit2.SetFocus;
+  FrameCAwizard.Edit2.Text := OpenDialog1.FileName;
+  FrameCAwizard.Edit2.SetFocus;
 end;
 
-procedure TForm2.SpeedButton2Click(Sender: TObject);
+procedure TMainWindow.SpeedButton2Click(Sender: TObject);
 begin
   OpenDialog1.FileName := '';
   if not(OpenDialog1.Execute) then
@@ -250,11 +219,11 @@ begin
     exit;
   end;
 
-  Edit3.Text := ExtractFilePath(OpenDialog1.FileName);
-  Edit3.SetFocus;
+  FrameCAwizard.Edit3.Text := ExtractFilePath(OpenDialog1.FileName);
+  FrameCAwizard.Edit3.SetFocus;
 end;
 
-procedure TForm2.SpeedButton4Click(Sender: TObject);
+procedure TMainWindow.SpeedButton4Click(Sender: TObject);
 begin
   if not(OpenDialog1.Execute) then
   begin
@@ -268,37 +237,38 @@ begin
     'would you overwrite it ?',
     mtConfirmation, [mbYes, mbNo, mbCancel], 0) = mrYes then
     begin
-      Edit4.Text := OpenDialog1.FileName;
+      FrameCAwizard.Edit4.Text := OpenDialog1.FileName;
     end else
     begin
-      Edit4.Text := '';
+      FrameCAwizard.Edit4.Text := '';
     end;
   end;
 end;
 
-procedure TForm2.ExitApplication1Click(Sender: TObject);
+procedure TMainWindow.ExitApplication1Click(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TForm2.SaveSettings1Click(Sender: TObject);
+procedure TMainWindow.SaveSettings1Click(Sender: TObject);
 var
   ini: TIniFile;
 begin
   ini := nil;
   try
     try
-      ini := TIniFile.Create(ExtractFileDir(Application.ExeName) + '\tool.ini');
-      ini.WriteString('download','src'    ,Edit1.Text);
-      ini.WriteString('download','dst'    ,Edit2.Text);
+      ini := TIniFile.Create(ExtractFileDir (Application.ExeName) + '\' +
+      iniFileName);
+      ini.WriteString('download','src'    ,FrameCAwizard.Edit1.Text);
+      ini.WriteString('download','dst'    ,FrameCAwizard.Edit2.Text);
 
-      ini.WriteString('cacert'  ,'cadir'  ,Edit3.Text);
-      ini.WriteString('cacert'  ,'keyfile',Edit4.Text);
-      ini.WriteString('cacert'  ,'modula' ,Edit5.Text);
-      ini.WriteString('cacert'  ,'type'   ,Edit6.Text);
+      ini.WriteString('cacert'  ,'cadir'  ,FrameCAwizard.Edit3.Text);
+      ini.WriteString('cacert'  ,'keyfile',FrameCAwizard.Edit4.Text);
+      ini.WriteString('cacert'  ,'modula' ,FrameCAwizard.Edit5.Text);
+      ini.WriteString('cacert'  ,'type'   ,FrameCAwizard.Edit6.Text);
 
-      ini.WriteBool('setup','download',CheckBox1.Checked);
-      ini.WriteBool('setup','install' ,CheckBox2.Checked);
+      ini.WriteBool('setup','download',FrameCAwizard.CheckBox1.Checked);
+      ini.WriteBool('setup','install' ,FrameCAwizard.CheckBox2.Checked);
     except
       on E: Exception do
       begin
@@ -312,24 +282,25 @@ begin
   end;
 end;
 
-procedure TForm2.LoadSettings1Click(Sender: TObject);
+procedure TMainWindow.LoadSettings1Click(Sender: TObject);
 var
   ini: TIniFile;
 begin
   ini := nil;
   try
     try
-      ini := TIniFile.Create(ExtractFileDir(Application.ExeName) + '\tool.ini');
-      Edit1.Text := ini.ReadString('download','src'    ,'');
-      Edit2.Text := ini.ReadString('download','dst'    ,'');
+      ini := TIniFile.Create(ExtractFileDir(Application.ExeName) + '\' +
+      iniFileName);
+      FrameCAwizard.Edit1.Text := ini.ReadString('download','src'    ,'');
+      FrameCAwizard.Edit2.Text := ini.ReadString('download','dst'    ,'');
 
-      Edit3.Text := ini.ReadString('cacert'  ,'cadir'  ,'');
-      Edit4.Text := ini.ReadString('cacert'  ,'keyfile','');
-      Edit5.Text := ini.ReadString('cacert'  ,'modula' ,'');
-      Edit6.Text := ini.ReadString('cacert'  ,'type'   ,'');
+      FrameCAwizard.Edit3.Text := ini.ReadString('cacert'  ,'cadir'  ,'');
+      FrameCAwizard.Edit4.Text := ini.ReadString('cacert'  ,'keyfile','');
+      FrameCAwizard.Edit5.Text := ini.ReadString('cacert'  ,'modula' ,'');
+      FrameCAwizard.Edit6.Text := ini.ReadString('cacert'  ,'type'   ,'');
 
-      CheckBox1.Checked := ini.ReadBool('setup','download',false);
-      CheckBox2.Checked := ini.ReadBool('setup','install' ,false);
+      FrameCAwizard.CheckBox1.Checked := ini.ReadBool('setup','download',false);
+      FrameCAwizard.CheckBox2.Checked := ini.ReadBool('setup','install' ,false);
     except
       on E: Exception do
       begin
@@ -343,30 +314,30 @@ begin
   end;
 end;
 
-procedure TForm2.ClearFields1Click(Sender: TObject);
+procedure TMainWindow.ClearFields1Click(Sender: TObject);
 begin
-  Edit1.Text := '';
-  Edit2.Text := '';
-  Edit3.Text := '';
+  FrameCAwizard.Edit1.Text := '';
+  FrameCAwizard.Edit2.Text := '';
+  FrameCAwizard.Edit3.Text := '';
 
-  CheckBox1.Checked := false;
-  CheckBox2.Checked := false;
+  FrameCAwizard.CheckBox1.Checked := false;
+  FrameCAwizard.CheckBox2.Checked := false;
 end;
 
-procedure TForm2.DefaultSettings1Click(Sender: TObject);
+procedure TMainWindow.DefaultSettings1Click(Sender: TObject);
 begin
-  Edit1.Text := 'https://paule32.de.cool/Clara/ssl/latest_win32.exe';
-  Edit2.Text := 'C:\temp\sslwin32.exe';
-  Edit3.Text := 'C:\temp\certs';
+  FrameCAwizard.Edit1.Text := 'https://paule32.de.cool/Clara/ssl/latest_win32.exe';
+  FrameCAwizard.Edit2.Text := 'C:\temp\sslwin32.exe';
+  FrameCAwizard.Edit3.Text := 'C:\temp\certs';
 end;
 
-procedure TForm2.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TMainWindow.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   SaveSettings1Click(Sender);
   Action := caFree;
 end;
 
-procedure TForm2.JvWizard1HelpButtonClick(Sender: TObject);
+procedure TMainWindow.JvWizard1HelpButtonClick(Sender: TObject);
 begin
   Application.HelpFile := 'SignTool.chm';
   Application.HelpCommand(HELP_CONTEXT,10);
@@ -385,15 +356,15 @@ begin
   end;
 end;
 
-procedure TForm2.JvWizardInteriorPage1NextButtonClick(
+procedure TMainWindow.JvWizardInteriorPage1NextButtonClick(
   Sender: TObject; var
   Stop  : Boolean);
 var
   S1,S2,S3: String;
 begin
-  S1 := Trim(Edit1.Text);
-  S2 := Trim(Edit2.Text);
-  S3 := Trim(Edit3.Text);
+  S1 := Trim(FrameCAwizard.Edit1.Text);
+  S2 := Trim(FrameCAwizard.Edit2.Text);
+  S3 := Trim(FrameCAwizard.Edit3.Text);
 
   if Length(S1) < 2 then
   begin
@@ -403,7 +374,7 @@ begin
   end;
   if Length(S2) < 2 then
   begin
-    if not(CheckBox1.Checked) then
+    if not(FrameCAwizard.CheckBox1.Checked) then
     begin
       ShowMessage('Field 2 must not empty.');
       stop := true;
@@ -426,24 +397,26 @@ begin
 
   try
     // download ?
-    if not(CheckBox1.Checked) then
+    if not(FrameCAwizard.CheckBox1.Checked) then
     begin
-      Label4.Visible := true;
-      if DownLoadFile(Edit1.Text,Edit2.Text) then
+      FrameCAwizard.Label4.Visible := true;
+      if DownLoadFile(
+      FrameCAwizard.Edit1.Text,
+      FrameCAwizard.Edit2.Text) then
       begin
-        Label4.Visible := false;
+        FrameCAwizard.Label4.Visible := false;
         ShowMessage('download success !!!');
       end else
       raise Exception.Create('Error while downloading:' +
-      #13#10 + Edit1.Text);
+      #13#10 + FrameCAwizard.Edit1.Text);
     end;
     // install ?
-    if not(CheckBox2.Checked) then
+    if not(FrameCAwizard.CheckBox2.Checked) then
     begin
       ShellExecute(
       Application.Handle,
       PChar('open'),
-      PChar(Edit2.Text),
+      PChar(FrameCAwizard.Edit2.Text),
       PChar(''),
       nil,SW_SHOW);
     end;
@@ -466,16 +439,17 @@ begin
   end;
 end;
 
-procedure TForm2.JvWizardInteriorPage2NextButtonClick(Sender: TObject;
-  var Stop: Boolean);
+procedure TMainWindow.JvWizardInteriorPage2FinishButtonClick(
+  Sender: TObject; var
+  Stop  : Boolean);
 begin
-  SetCurrentDir(Edit3.Text);
+  SetCurrentDir(FrameCAwizard.Edit3.Text);
   JvCreateProcess1.CommandLine :=
   'openssl genrsa -' +
-  Edit6.Text         +
+  FrameCAwizard.Edit6.Text         +
   '-out '            +
-  Edit4.Text         + ' ' +
-  Edit5.Text;
+  FrameCAwizard.Edit4.Text         + ' ' +
+  FrameCAwizard.Edit5.Text;
   JvCreateProcess1.Run;
 end;
 

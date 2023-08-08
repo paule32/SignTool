@@ -90,10 +90,10 @@ MaxStackSize=1048576
 ImageBase=67108864
 ExeDescription=compiler wrapper IDE - kallup.net
 [Directories]
-OutputDir=
-UnitOutputDir=
-PackageDLLOutputDir=
-PackageDCPOutputDir=
+OutputDir=..\exe
+UnitOutputDir=..\tmp\dcu
+PackageDLLOutputDir=..\tmp\bpl
+PackageDCPOutputDir=..\tmp\dcp
 SearchPath=E:\Projekte\jedi\jvcl\jvcl\resources;E:\Projekte\jedi\jvcl\jvcl\lib\d7;E:\Projekte\jedi\jvcl\jvcl\common;E:\Projekte\jedi\jvcl\jvcl\dcu;E:\Projekte\jedi\jcl\jcl\source;E:\Projekte\jedi\jcl\jcl\source\common;E:\Projekte\jedi\jcl\jcl\source\include;E:\Projekte\jedi\jcl\jcl\source\include\jedi;E:\Projekte\jedi\jcl\jcl\source\vcl;E:\Projekte\jedi\jcl\jcl\source\windows;E:\Projekte\jedi\jcl\jcl\source\windows\obj;E:\Projekte\jedi\jcl\jcl\source\windows\obj\bzip2\win32;E:\Projekte\jedi\jcl\jcl\source\windows\obj\pcre\win32;E:\Projekte\jedi\jcl\jcl\source\windows\obj\zlib\win32;E:\Projekte\jedi\jcl\jcl\source\prototypes;E:\Projekte\jedi\jcl\jcl\source\prototypes\containers;E:\Projekte\jedi\jcl\jcl\source\prototypes\supplement;E:\Projekte\jedi\jcl\jcl\source\prototypes\win32api;E:\Projekte\jedi\jcl\jcl\lib\d7;E:\Projekte\jedi\jcl\jcl\packages\d7;E:\DELPHI\TNTCtrls\Source;E:\tmssoftware\trial\TMSVCLUIPack RS7;E:\tmssoftware\trial\TMSVCLUIPack RS7\Win32;E:\LMD2020\source;E:\LMD2020\lib;E:\LMD2020\lib\d7;E:\LMD2020\Resources;E:\LMD2020\Resources\eng;E:\LMD2020\interface;E:\LMD2020
 Packages=vcl;rtl;vclx;inet;xmlrtl;vclie;inetdbbde;inetdbxpress;dbrtl;dsnap;dsnapcon;vcldb;soaprtl;VclSmp;dbexpress;dbxcds;inetdb;bdertl;vcldbx;webdsnap;websnap;adortl;ibxpress;teeui;teedb;tee;dss;visualclx;visualdbclx;vclactnband;vclshlctrls;IntrawebDB_50_70;Intraweb_50_70;Rave50CLX;Rave50VCL;dclOfficeXP;JvCore;JvSystem;JvStdCtrls;JvAppFrm;JvBands;JvDB;JvDlgs;JvBDE;JvControls;JvCmp;JvCrypt;JvCustom;JvDocking;JvDotNetCtrls;JvGlobus;JvHMI;JvJans;JvManagedThreads;JvMM;JvNet;JvPageComps;JvPascalInterpreter;JvPluginSystem;JvPrintPreview;JvRuntimeDesign;JvTimeFramework;JvWizards;JvXPCtrls;qrpt;CEF4Delphi_D7;kallupDesignDelphi7;madBasic_;madDisAsm_;madExcept_;Package1;vc2;kbmMemD7Run;lmdrtl;lmdrtcore;lmdrtbar;lmdrtchart;lmdrtchartdb;lmdrtdesign;lmdrtdialog;lmdrtdocking;lmdrtelcore;lmdrteldb;lmdrtelpro;lmdrtfx;lmdrtgrid;lmdrtide;lmdrtinspector;lmdrtplugin;lmdrtprint;lmdrtrtf;lmdrtrtfdb;lmdrtrtlx;lmdrtscript;lmdrtscriptimp;lmdrtsearchdb;lmdrtsearch;lmdrtshell;lmdrtstorage;lmdrtsyntax;lmdrtsys;lmdrtthemes;lmdrttools;lmdrttoolsdb;lmdrttxt;lmdrttxtdb;lmdrtweb;fqb70;fqbADO70;fqbBDE70;fqbDBX70;fqbIBX70
 Conditionals=KBMMEMTABLE_PRO_EDITION;madExcept
@@ -151,20 +151,25 @@ Item2=E:\Projekte\jedi\jvcl\jvcl\resources;E:\Projekte\jedi\jvcl\jvcl\lib\d7;E:\
 Item3=E:\Projekte\jedi\jvcl\jvcl\resources;E:\Projekte\jedi\jvcl\jvcl\lib\d7;E:\Projekte\jedi\jvcl\jvcl\common;E:\Projekte\jedi\jvcl\jvcl\dcu;E:\Projekte\jedi\jcl\jcl\source;E:\Projekte\jedi\jcl\jcl\source\common;E:\Projekte\jedi\jcl\jcl\source\include;E:\Projekte\jedi\jcl\jcl\source\include\jedi;E:\Projekte\jedi\jcl\jcl\source\vcl;E:\Projekte\jedi\jcl\jcl\source\windows;E:\Projekte\jedi\jcl\jcl\source\windows\obj;E:\Projekte\jedi\jcl\jcl\source\windows\obj\bzip2\win32;E:\Projekte\jedi\jcl\jcl\source\windows\obj\pcre\win32;E:\Projekte\jedi\jcl\jcl\source\windows\obj\zlib\win32;E:\Projekte\jedi\jcl\jcl\source\prototypes;E:\Projekte\jedi\jcl\jcl\source\prototypes\containers;E:\Projekte\jedi\jcl\jcl\source\prototypes\supplement;E:\Projekte\jedi\jcl\jcl\source\prototypes\win32api;E:\Projekte\jedi\jcl\jcl\lib\d7;E:\Projekte\jedi\jcl\jcl\packages\d7
 Item4=.\;E:\Program Files (x86)\Borland\Delphi7\Source\Property Editors;E:\Program Files (x86)\Borland\Delphi7\Source\ToolsAPI
 [HistoryLists\hlUnitOutputDirectory]
-Count=2
-Item0=..\dcu
-Item1=.\dcu
-[HistoryLists\hlOutputDirectorry]
-Count=1
-Item0=..\dcu
-[HistoryLists\hlBPLOutput]
 Count=3
-Item0=..\dcu
-Item1=...\dcu
-Item2=.\out
-[HistoryLists\hlDCPOutput]
+Item0=..\tmp\dcu
+Item1=..\dcu
+Item2=.\dcu
+[HistoryLists\hlOutputDirectorry]
+Count=3
+Item0=..\exe
+Item1=..\tmp\exe
+Item2=..\dcu
+[HistoryLists\hlBPLOutput]
 Count=4
-Item0=..\dcu
-Item1=...\dcu
-Item2=E:\Projekte\remoteAssembly\dcp
-Item3=.\dcp
+Item0=..\tmp\bpl
+Item1=..\dcu
+Item2=...\dcu
+Item3=.\out
+[HistoryLists\hlDCPOutput]
+Count=5
+Item0=..\tmp\dcp
+Item1=..\dcu
+Item2=...\dcu
+Item3=E:\Projekte\remoteAssembly\dcp
+Item4=.\dcp
