@@ -10,7 +10,7 @@ uses
   JvArrowButton, JvComponentBase, JvZlibMultiple, JclCompression,
   FrameApache, FrameCAroot, FrameLocalDNS, JvCreateProcess, JvMenus, Menus,
   JvWizard, JvWizardRouteMapSteps, StdCtrls, Buttons, LMDPNGImage, CheckLst,
-  FrameCAwizard;
+  FrameCAwizard, CompanyInformations;
 
 type
   TMainWindow = class(TForm)
@@ -78,6 +78,7 @@ type
     FrameLocalDNS: TFrame3;
 
     FrameCAwizard: TFrame2;
+    FrameCompanyInfo: TFrame4;
   end;
 
 var
@@ -122,6 +123,7 @@ begin
   FrameCAwizard.SpeedButton2.Left := FrameCAwizard.Edit2.Width + 10;
   FrameCAwizard.SpeedButton3.Left := FrameCAwizard.Edit3.Width + 10;
 
+  FrameCAroot.Edit_CA_Name.SetFocus;
 end;
 
 procedure TMainWindow.JvOutlookBar1Pages0Buttons2Click(Sender: TObject);
@@ -162,6 +164,11 @@ begin
   FrameCAwizard.Parent  := Panel2;
   FrameCAwizard.Align   := alClient;
   FrameCAwizard.Visible := false;
+
+  FrameCompanyInfo := TFrame4.Create(Panel2);
+  FrameCompanyInfo.Parent  := Panel2;
+  FrameCompanyInfo.Align   := alClient;
+  FrameCompanyInfo.Visible := false;
 
   FrameLocalDNS := TFrame3.Create(Panel1);
   FrameLocalDNS.Parent  := Panel1;

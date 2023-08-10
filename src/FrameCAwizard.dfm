@@ -16,7 +16,7 @@ object Frame2: TFrame2
       Top = 0
       Width = 649
       Height = 526
-      ActivePage = JvWizardInteriorPage2
+      ActivePage = JvWizardInteriorPage1
       ButtonBarHeight = 50
       ButtonStart.Caption = 'To &Start Page'
       ButtonStart.NumGlyphs = 1
@@ -48,6 +48,8 @@ object Frame2: TFrame2
       Font.Height = -16
       Font.Name = 'Arial'
       Font.Style = [fsBold]
+      Enabled = False
+      Visible = False
       DesignSize = (
         649
         526)
@@ -100,6 +102,7 @@ object Frame2: TFrame2
           Font.Name = 'MS Sans Serif'
           Font.Style = [fsBold]
           ParentFont = False
+          Visible = False
           OnClick = SpeedButton1Click
         end
         object Label2: TLabel
@@ -116,6 +119,7 @@ object Frame2: TFrame2
           Font.Style = [fsBold]
           ParentColor = False
           ParentFont = False
+          Visible = False
         end
         object SpeedButton2: TSpeedButton
           Left = 434
@@ -130,6 +134,7 @@ object Frame2: TFrame2
           Font.Name = 'MS Sans Serif'
           Font.Style = [fsBold]
           ParentFont = False
+          Visible = False
           OnClick = SpeedButton2Click
         end
         object Label3: TLabel
@@ -146,6 +151,7 @@ object Frame2: TFrame2
           Font.Style = [fsBold]
           ParentColor = False
           ParentFont = False
+          Visible = False
         end
         object SpeedButton3: TSpeedButton
           Left = 434
@@ -160,6 +166,7 @@ object Frame2: TFrame2
           Font.Name = 'MS Sans Serif'
           Font.Style = [fsBold]
           ParentFont = False
+          Visible = False
           OnClick = SpeedButton3Click
         end
         object Label4: TLabel
@@ -192,6 +199,7 @@ object Frame2: TFrame2
           Font.Style = [fsBold]
           ParentColor = False
           ParentFont = False
+          Visible = False
         end
         object Edit1: TEdit
           Left = 0
@@ -207,6 +215,7 @@ object Frame2: TFrame2
           Font.Style = []
           ParentFont = False
           TabOrder = 0
+          Visible = False
           OnEnter = Edit1Enter
           OnExit = Edit1Exit
         end
@@ -224,6 +233,7 @@ object Frame2: TFrame2
           Font.Style = []
           ParentFont = False
           TabOrder = 1
+          Visible = False
           OnEnter = Edit2Enter
           OnExit = Edit2Exit
         end
@@ -241,6 +251,7 @@ object Frame2: TFrame2
           Font.Style = []
           ParentFont = False
           TabOrder = 2
+          Visible = False
           OnEnter = Edit3Enter
           OnExit = Edit3Exit
         end
@@ -251,6 +262,7 @@ object Frame2: TFrame2
           Height = 25
           Caption = 'Clear Fields'
           TabOrder = 3
+          Visible = False
           OnClick = Button1Click
         end
         object CheckBox1: TCheckBox
@@ -268,6 +280,7 @@ object Frame2: TFrame2
           ParentColor = False
           ParentFont = False
           TabOrder = 4
+          Visible = False
         end
         object CheckBox2: TCheckBox
           Left = 0
@@ -284,6 +297,7 @@ object Frame2: TFrame2
           ParentColor = False
           ParentFont = False
           TabOrder = 5
+          Visible = False
         end
       end
       object JvWizardInteriorPage2: TJvWizardInteriorPage
