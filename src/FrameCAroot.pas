@@ -4,8 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, JvExControls, JvOutlookBar, ComCtrls, StdCtrls, ImgList,
-  JvExStdCtrls, JvEdit;
+  Dialogs, JvExControls, JvOutlookBar, ComCtrls, StdCtrls, ImgList, DateUtils,
+  JvExStdCtrls, JvEdit, StrUtils;
 
 type
   TCArootFrame = class(TFrame)
@@ -193,6 +193,13 @@ end;
 procedure TCArootFrame.TreeView1Click(Sender: TObject);
 var
   tn: TTreeNode;
+  function LeftPad(
+    value : integer ;
+    length: integer = 2;
+    pad   : char    = '0'): string; overload;
+  begin
+    result := RightStr(StringOfChar(pad,length) + IntToStr(value), length );
+  end;
 begin
   tn := TreeView1.Selected;
   if tn <> nil then
@@ -203,6 +210,12 @@ begin
       MainWindow.FrameCAwizard.JvWizard1.Visible := false;
 
       MainWindow.FrameCompanyInfo.Visible := true;
+      MainWindow.FrameCompanyInfo.LabelDate.Font.Name := 'Consolas';
+      MainWindow.FrameCompanyInfo.LabelDate.Caption :=
+      Format('%d-%s-%s',[
+      CurrentYear ,
+      LeftPad(MonthOf(Now)),
+      LeftPad(DayOf  (Now))] );
     end;
   end;
 end;

@@ -30,7 +30,7 @@ object Frame4: TFrame4
     DesignSize = (
       505
       41)
-    object Label1: TLabel
+    object LabelDate: TLabel
       Left = 399
       Top = 11
       Width = 82

@@ -9,7 +9,7 @@ uses
 type
   TFrame4 = class(TFrame)
     Panel1: TPanel;
-    Label1: TLabel;
+    LabelDate: TLabel;
     Panel2: TPanel;
     Panel3: TPanel;
     ComboBox1: TComboBox;
